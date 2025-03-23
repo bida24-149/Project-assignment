@@ -1,0 +1,42 @@
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background-color: #333;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+}
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Place it behind other content */
+}
+.content {
+    position: relative; /* To ensure content stays on top */
+    text-align: center;
+    padding: 50px;
+    z-index: 1; /* Bring content above the video */
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    overflow: hidden; /* Prevent scrollbars */
+}
