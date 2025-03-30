@@ -18,25 +18,29 @@ nav ul li a:hover {
     background-color: #555;
     border-radius: 5px;
 }
-#background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1; /* Place it behind other content */
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
-.content {
-    position: relative; /* To ensure content stays on top */
+.product-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
     text-align: center;
-    padding: 50px;
-    z-index: 1; /* Bring content above the video */
+    width: 150px;
+    background-color: #f9f9f9;
+    transition: 0.3s;
+}
+.product-box:hover {
+    background-color: #ddd;
 }
 body {
+    background-image: url('wallpaper.jpg'); /* Change to your image file */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    height: 100vh; /* Full screen height */
     margin: 0;
-    font-family: sans-serif;
-    color: white;
-    overflow: hidden; /* Prevent scrollbars */
 }

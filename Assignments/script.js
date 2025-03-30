@@ -24,4 +24,14 @@ document.addEventListener("DOMContentLoaded", function() {
         navList.appendChild(listItem);
     });
     navBar.appendChild(navList);
+    
+    document.getElementById("apple").addEventListener("click", function() {
+        sections.forEach(sec => sec.style.display = "none");
+        document.getElementById("apple-products").style.display = "block";
+    });
+    
+    document.getElementById("samsung").addEventListener("click", function() {
+        sections.forEach(sec => sec.style.display = "none");
+        document.getElementById("samsung-products").style.display = "block";
+    });
 });
